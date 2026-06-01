@@ -1,0 +1,421 @@
+{
+  "shape": {
+    "n_rows": 145460,
+    "n_cols": 23
+  },
+  "columns": [
+    "Date",
+    "Location",
+    "MinTemp",
+    "MaxTemp",
+    "Rainfall",
+    "Evaporation",
+    "Sunshine",
+    "WindGustDir",
+    "WindGustSpeed",
+    "WindDir9am",
+    "WindDir3pm",
+    "WindSpeed9am",
+    "WindSpeed3pm",
+    "Humidity9am",
+    "Humidity3pm",
+    "Pressure9am",
+    "Pressure3pm",
+    "Cloud9am",
+    "Cloud3pm",
+    "Temp9am",
+    "Temp3pm",
+    "RainToday",
+    "RainTomorrow"
+  ],
+  "dtypes": {
+    "Date": "object",
+    "Location": "object",
+    "MinTemp": "float64",
+    "MaxTemp": "float64",
+    "Rainfall": "float64",
+    "Evaporation": "float64",
+    "Sunshine": "float64",
+    "WindGustDir": "object",
+    "WindGustSpeed": "float64",
+    "WindDir9am": "object",
+    "WindDir3pm": "object",
+    "WindSpeed9am": "float64",
+    "WindSpeed3pm": "float64",
+    "Humidity9am": "float64",
+    "Humidity3pm": "float64",
+    "Pressure9am": "float64",
+    "Pressure3pm": "float64",
+    "Cloud9am": "float64",
+    "Cloud3pm": "float64",
+    "Temp9am": "float64",
+    "Temp3pm": "float64",
+    "RainToday": "object",
+    "RainTomorrow": "object"
+  },
+  "n_duplicates": 0,
+  "dates": {
+    "min": "2007-11-01",
+    "max": "2017-06-25",
+    "n_unique_dates": 3436,
+    "n_years_covered": 11,
+    "years": [
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ]
+  },
+  "locations": {
+    "n_locations": 49,
+    "min_rows_per_station": 1578,
+    "max_rows_per_station": 3436,
+    "station_min_rows": "Nhil",
+    "station_max_rows": "Canberra",
+    "mean_rows_per_station": 2968.6
+  },
+  "missing_pct": {
+    "Sunshine": 48.01,
+    "Evaporation": 43.17,
+    "Cloud3pm": 40.81,
+    "Cloud9am": 38.42,
+    "Pressure9am": 10.36,
+    "Pressure3pm": 10.33,
+    "WindDir9am": 7.26,
+    "WindGustDir": 7.1,
+    "WindGustSpeed": 7.06,
+    "Humidity3pm": 3.1,
+    "WindDir3pm": 2.91,
+    "Temp3pm": 2.48,
+    "RainTomorrow": 2.25,
+    "Rainfall": 2.24,
+    "RainToday": 2.24,
+    "WindSpeed3pm": 2.11,
+    "Humidity9am": 1.82,
+    "WindSpeed9am": 1.21,
+    "Temp9am": 1.21,
+    "MinTemp": 1.02,
+    "MaxTemp": 0.87,
+    "Date": 0.0,
+    "Location": 0.0
+  },
+  "target": {
+    "counts": {
+      "Yes": 31877,
+      "No": 110316,
+      "NaN": 3267
+    },
+    "pct_missing": 2.25,
+    "base_rate_yes_pct": 22.42,
+    "naive_always_no_pct": 77.58
+  },
+  "baseline_persistence": {
+    "accuracy_pct": 76.23,
+    "n_rows_used": 140787,
+    "p_rain_tomorrow_given_raintoday_yes_pct": 46.41,
+    "p_rain_tomorrow_given_raintoday_no_pct": 15.19
+  },
+  "numeric_describe": {
+    "MinTemp": {
+      "min": -8.5,
+      "max": 33.9,
+      "mean": 12.194,
+      "std": 6.398,
+      "count": 143975
+    },
+    "MaxTemp": {
+      "min": -4.8,
+      "max": 48.1,
+      "mean": 23.221,
+      "std": 7.119,
+      "count": 144199
+    },
+    "Rainfall": {
+      "min": 0.0,
+      "max": 371.0,
+      "mean": 2.361,
+      "std": 8.478,
+      "count": 142199
+    },
+    "Evaporation": {
+      "min": 0.0,
+      "max": 145.0,
+      "mean": 5.468,
+      "std": 4.194,
+      "count": 82670
+    },
+    "Sunshine": {
+      "min": 0.0,
+      "max": 14.5,
+      "mean": 7.611,
+      "std": 3.785,
+      "count": 75625
+    },
+    "WindGustSpeed": {
+      "min": 6.0,
+      "max": 135.0,
+      "mean": 40.035,
+      "std": 13.607,
+      "count": 135197
+    },
+    "WindSpeed9am": {
+      "min": 0.0,
+      "max": 130.0,
+      "mean": 14.043,
+      "std": 8.915,
+      "count": 143693
+    },
+    "WindSpeed3pm": {
+      "min": 0.0,
+      "max": 87.0,
+      "mean": 18.663,
+      "std": 8.81,
+      "count": 142398
+    },
+    "Humidity9am": {
+      "min": 0.0,
+      "max": 100.0,
+      "mean": 68.881,
+      "std": 19.029,
+      "count": 142806
+    },
+    "Humidity3pm": {
+      "min": 0.0,
+      "max": 100.0,
+      "mean": 51.539,
+      "std": 20.796,
+      "count": 140953
+    },
+    "Pressure9am": {
+      "min": 980.5,
+      "max": 1041.0,
+      "mean": 1017.65,
+      "std": 7.107,
+      "count": 130395
+    },
+    "Pressure3pm": {
+      "min": 977.1,
+      "max": 1039.6,
+      "mean": 1015.256,
+      "std": 7.037,
+      "count": 130432
+    },
+    "Cloud9am": {
+      "min": 0.0,
+      "max": 9.0,
+      "mean": 4.447,
+      "std": 2.887,
+      "count": 89572
+    },
+    "Cloud3pm": {
+      "min": 0.0,
+      "max": 9.0,
+      "mean": 4.51,
+      "std": 2.72,
+      "count": 86102
+    },
+    "Temp9am": {
+      "min": -7.2,
+      "max": 40.2,
+      "mean": 16.991,
+      "std": 6.489,
+      "count": 143693
+    },
+    "Temp3pm": {
+      "min": -5.4,
+      "max": 46.7,
+      "mean": 21.683,
+      "std": 6.937,
+      "count": 141851
+    }
+  },
+  "pointbiserial_corr": {
+    "Sunshine": -0.4508,
+    "Humidity3pm": 0.4462,
+    "Cloud3pm": 0.3819,
+    "Cloud9am": 0.3174,
+    "Humidity9am": 0.2572,
+    "Pressure9am": -0.2464,
+    "Rainfall": 0.239,
+    "WindGustSpeed": 0.234,
+    "Pressure3pm": -0.226,
+    "Temp3pm": -0.1924,
+    "MaxTemp": -0.1592,
+    "Evaporation": -0.1193,
+    "WindSpeed9am": 0.091,
+    "WindSpeed3pm": 0.0878,
+    "MinTemp": 0.0839,
+    "Temp9am": -0.0257
+  },
+  "pointbiserial_corr_highlight": {
+    "Humidity3pm": 0.4462,
+    "Humidity9am": 0.2572,
+    "Pressure3pm": -0.226,
+    "Sunshine": -0.4508,
+    "Cloud3pm": 0.3819,
+    "Rainfall": 0.239,
+    "WindGustSpeed": 0.234,
+    "Temp3pm": -0.1924
+  },
+  "class_means": {
+    "Humidity3pm": {
+      "No": 46.511,
+      "Yes": 68.8
+    },
+    "Sunshine": {
+      "No": 8.546,
+      "Yes": 4.472
+    },
+    "Pressure3pm": {
+      "No": 1016.114,
+      "Yes": 1012.301
+    },
+    "Rainfall": {
+      "No": 1.27,
+      "Yes": 6.142
+    }
+  },
+  "windgustdir": {
+    "distribution": {
+      "nan": 10326,
+      "W": 9915,
+      "SE": 9418,
+      "N": 9313,
+      "SSE": 9216,
+      "E": 9181,
+      "S": 9168,
+      "WSW": 9069,
+      "SW": 8967,
+      "SSW": 8736,
+      "WNW": 8252,
+      "NW": 8122,
+      "ENE": 8104,
+      "ESE": 7372,
+      "NE": 7133,
+      "NNW": 6620,
+      "NNE": 6548
+    },
+    "rain_rate_pct": {
+      "NW": 28.54,
+      "NNW": 28.4,
+      "WNW": 28.2,
+      "N": 27.14,
+      "W": 26.66,
+      "WSW": 23.42,
+      "NNE": 23.02,
+      "S": 22.54,
+      "SSW": 22.03,
+      "SW": 20.51,
+      "SSE": 19.52,
+      "NE": 18.68,
+      "SE": 18.62,
+      "ESE": 16.43,
+      "ENE": 16.12,
+      "E": 14.88
+    },
+    "top3_wettest": {
+      "NW": 28.54,
+      "NNW": 28.4,
+      "WNW": 28.2
+    },
+    "bottom3_driest": {
+      "ESE": 16.43,
+      "ENE": 16.12,
+      "E": 14.88
+    }
+  },
+  "geography": {
+    "rain_rate_by_location_pct": {
+      "Portland": 36.55,
+      "Walpole": 33.66,
+      "Cairns": 31.79,
+      "Dartmoor": 31.33,
+      "NorfolkIsland": 31.01,
+      "MountGambier": 30.36,
+      "Albany": 29.91,
+      "Witchcliffe": 29.78,
+      "CoffsHarbour": 29.43,
+      "MountGinini": 28.17,
+      "NorahHead": 27.59,
+      "Williamtown": 27.42,
+      "Darwin": 26.69,
+      "Melbourne": 26.12,
+      "GoldCoast": 26.01,
+      "Sydney": 25.92,
+      "Ballarat": 25.79,
+      "SydneyAirport": 25.76,
+      "Newcastle": 24.74,
+      "Watsonia": 24.61,
+      "Wollongong": 23.9,
+      "Hobart": 23.87,
+      "Launceston": 23.08,
+      "Brisbane": 22.43,
+      "Adelaide": 22.27,
+      "MelbourneAirport": 21.7,
+      "Sale": 21.43,
+      "Albury": 20.52,
+      "Perth": 20.2,
+      "Penrith": 20.07,
+      "BadgerysCreek": 19.91,
+      "Nuriootpa": 19.72,
+      "Richmond": 18.98,
+      "Tuggeranong": 18.95,
+      "PerthAirport": 18.84,
+      "Bendigo": 18.52,
+      "Canberra": 18.4,
+      "PearceRAAF": 18.28,
+      "WaggaWagga": 18.01,
+      "Townsville": 17.11,
+      "Katherine": 17.0,
+      "SalmonGums": 15.97,
+      "Nhil": 15.42,
+      "Moree": 13.81,
+      "Cobar": 12.92,
+      "Mildura": 10.87,
+      "AliceSprings": 8.05,
+      "Uluru": 7.63,
+      "Woomera": 6.76
+    },
+    "top5_wettest": {
+      "Portland": 36.55,
+      "Walpole": 33.66,
+      "Cairns": 31.79,
+      "Dartmoor": 31.33,
+      "NorfolkIsland": 31.01
+    },
+    "top5_driest": {
+      "Cobar": 12.92,
+      "Mildura": 10.87,
+      "AliceSprings": 8.05,
+      "Uluru": 7.63,
+      "Woomera": 6.76
+    }
+  },
+  "seasonality": {
+    "rain_rate_by_month_pct": {
+      "1": 19.33,
+      "2": 20.97,
+      "3": 21.33,
+      "4": 21.78,
+      "5": 22.53,
+      "6": 26.18,
+      "7": 26.92,
+      "8": 25.25,
+      "9": 22.97,
+      "10": 19.57,
+      "11": 21.25,
+      "12": 20.81
+    },
+    "wettest_month": 7,
+    "wettest_month_pct": 26.92,
+    "driest_month": 1,
+    "driest_month_pct": 19.33
+  }
+}
