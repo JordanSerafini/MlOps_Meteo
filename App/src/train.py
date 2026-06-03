@@ -92,7 +92,7 @@ def main():
             "f1_rain": f1_score(y_test, pred),
             "roc_auc": roc_auc_score(y_test, proba),
         }
-        # Seuils recommandés (le seuil 0.5 par défaut sous-détecte la pluie minoritaire)
+        #! Seuils recommandés (le seuil 0.5 par défaut sous-détecte la pluie minoritaire >>> A MODIFIER APRES REVIEW EN TEAM!!!)
         thr_reco = recommend_thresholds(y_test, proba, target_recall=0.70)
 
         mlflow.log_param("model_type", args.model)

@@ -77,7 +77,7 @@
     "n_locations": 49,
     "min_rows_per_station": 1578,
     "max_rows_per_station": 3436,
-    "station_min_rows": "Nhil",
+    "station_min_rows": "Katherine",
     "station_max_rows": "Canberra",
     "mean_rows_per_station": 2968.6
   },
@@ -99,12 +99,12 @@
     "RainToday": 2.24,
     "WindSpeed3pm": 2.11,
     "Humidity9am": 1.82,
-    "WindSpeed9am": 1.21,
     "Temp9am": 1.21,
+    "WindSpeed9am": 1.21,
     "MinTemp": 1.02,
     "MaxTemp": 0.87,
-    "Date": 0.0,
-    "Location": 0.0
+    "Location": 0.0,
+    "Date": 0.0
   },
   "target": {
     "counts": {
