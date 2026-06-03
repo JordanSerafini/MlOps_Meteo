@@ -19,6 +19,8 @@ __pycache__/
 mlruns/
 mlflow.db
 *.mlflow
+# exception : le Dockerfile matche *.mlflow par accident
+!App/docker/Dockerfile.mlflow
 
 # --- Modèles / artefacts locaux (le runtime vit dans MLflow Registry) ---
 *.pkl
