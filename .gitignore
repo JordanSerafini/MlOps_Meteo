@@ -39,6 +39,3 @@ Thumbs.db
 *.swp
 *~
 .*.kate-swp
-
-# Données versionnées par DVC
-/Data/weatherAUS.csv
